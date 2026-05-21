@@ -28,9 +28,33 @@ export default function PurpleTeamLabCaseStudyPage() {
         </article>
       </section>
 
+      <section className="section">
+        <article className="glass card">
+          <h2>3) Architecture Diagram (Current Build)</h2>
+          <div className="diagram">
+            <div className="diagram-node">
+              <h4>Attacker VM</h4>
+              <p>Runs controlled attack simulations against predefined scenarios.</p>
+            </div>
+            <div className="diagram-node">
+              <h4>Victim VM</h4>
+              <p>Generates endpoint and system activity for telemetry validation.</p>
+            </div>
+            <div className="diagram-node">
+              <h4>Splunk Core</h4>
+              <p>Centralizes logs, correlation views, and detection tuning loops.</p>
+            </div>
+            <div className="diagram-node">
+              <h4>Defender Workflow Node</h4>
+              <p>Runs triage, investigation notes, and replay-based validation checks.</p>
+            </div>
+          </div>
+        </article>
+      </section>
+
       <section className="section grid grid-2">
         <article className="glass card">
-          <h2>3) Architecture / Workflow</h2>
+          <h2>4) Architecture / Workflow</h2>
           <ul className="sub list-tight">
             <li>Isolated VM environment for controlled simulation</li>
             <li>Attack execution from attacker VM against victim workflows</li>
@@ -40,7 +64,7 @@ export default function PurpleTeamLabCaseStudyPage() {
           </ul>
         </article>
         <article className="glass card">
-          <h2>4) Key Decisions / Tradeoffs</h2>
+          <h2>5) Key Decisions / Tradeoffs</h2>
           <ul className="sub list-tight">
             <li>Prioritized repeatability over lab scale</li>
             <li>Chose local virtualization for speed and full control</li>
@@ -52,14 +76,14 @@ export default function PurpleTeamLabCaseStudyPage() {
 
       <section className="section grid grid-2">
         <article className="glass card">
-          <h2>5) Outcome / Lesson</h2>
+          <h2>6) Outcome / Lesson</h2>
           <p className="sub">
             The lab now supports repeatable attack simulation and detection tuning cycles. The key gain is methodological:
             better consistency in how detections are validated and investigations are documented.
           </p>
         </article>
         <article className="glass card">
-          <h2>6) Professional Signal</h2>
+          <h2>7) Professional Signal</h2>
           <p className="sub">
             This project shows I can bridge security engineering, detection thinking, and systems implementation with
             practical execution discipline.

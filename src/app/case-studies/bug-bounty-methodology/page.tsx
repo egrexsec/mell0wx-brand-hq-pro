@@ -27,9 +27,33 @@ export default function BugBountyMethodologyCaseStudyPage() {
         </article>
       </section>
 
+      <section className="section">
+        <article className="glass card">
+          <h2>3) Architecture Diagram (Current Build)</h2>
+          <div className="diagram">
+            <div className="diagram-node">
+              <h4>Scope Intake Layer</h4>
+              <p>Normalizes target rules, program scope, and testing constraints.</p>
+            </div>
+            <div className="diagram-node">
+              <h4>Hypothesis Engine</h4>
+              <p>Generates prioritized vulnerability hypotheses by attack surface.</p>
+            </div>
+            <div className="diagram-node">
+              <h4>Investigation Workspace</h4>
+              <p>Tracks test evidence, dead-ends, and validation checkpoints.</p>
+            </div>
+            <div className="diagram-node">
+              <h4>Report Output Path</h4>
+              <p>Converts findings into reproducible, report-ready structure.</p>
+            </div>
+          </div>
+        </article>
+      </section>
+
       <section className="section grid grid-2">
         <article className="glass card">
-          <h2>3) Architecture / Workflow</h2>
+          <h2>4) Architecture / Workflow</h2>
           <ul className="sub list-tight">
             <li>Scope ingestion and target prioritization</li>
             <li>Hypothesis creation by attack surface</li>
@@ -39,7 +63,7 @@ export default function BugBountyMethodologyCaseStudyPage() {
           </ul>
         </article>
         <article className="glass card">
-          <h2>4) Key Decisions / Tradeoffs</h2>
+          <h2>5) Key Decisions / Tradeoffs</h2>
           <ul className="sub list-tight">
             <li>Optimized for quality and repeatability over volume</li>
             <li>Kept workflow adaptable across different scope types</li>
@@ -51,14 +75,14 @@ export default function BugBountyMethodologyCaseStudyPage() {
 
       <section className="section grid grid-2">
         <article className="glass card">
-          <h2>5) Outcome / Lesson</h2>
+          <h2>6) Outcome / Lesson</h2>
           <p className="sub">
             The workflow improved discipline from recon through reporting. The immediate value is cleaner investigation
             reasoning and less context loss between finding and write-up.
           </p>
         </article>
         <article className="glass card">
-          <h2>6) Professional Signal</h2>
+          <h2>7) Professional Signal</h2>
           <p className="sub">
             Demonstrates security research rigor and the ability to operationalize methodology into repeatable team-relevant
             practices.

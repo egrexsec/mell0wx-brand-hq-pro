@@ -133,7 +133,46 @@ body {
 .timeline-item h4 { margin: 0 0 4px; }
 .timeline-item p { margin: 0; color: var(--muted); }
 
+.diagram {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  margin-top: 10px;
+}
+
+.diagram-node {
+  border: 1px solid #30425f;
+  background: rgba(8, 13, 22, 0.72);
+  border-radius: 12px;
+  padding: 10px;
+}
+
+.diagram-node h4 {
+  margin: 0 0 6px;
+  font-size: .88rem;
+  color: #e5eeff;
+}
+
+.diagram-node p {
+  margin: 0;
+  color: var(--muted);
+  font-size: .82rem;
+  line-height: 1.45;
+}
+
 @media (max-width: 760px) {
   .nav { display: none; }
-  .hero { padding: 20px; }
+  .container-main { padding: 20px 14px 52px; }
+  .hero { padding: 18px; }
+  .hero-title { font-size: clamp(1.72rem, 8.2vw, 2.25rem); line-height: 1.14; }
+  .section { margin-top: 20px; }
+  .card { padding: 14px; border-radius: 14px; }
+  .btn-row { gap: 8px; margin-top: 14px; }
+  .btn { padding: 9px 12px; font-size: .9rem; }
+  .case-image { height: 148px; }
+  .case-body { padding: 13px; }
+  .case-body h3 { font-size: .98rem; }
+  .case-body p { font-size: .88rem; line-height: 1.48; }
+  .sub { font-size: .95rem; line-height: 1.52; }
+  .diagram { grid-template-columns: 1fr; }
 }
