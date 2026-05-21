@@ -6,28 +6,34 @@ import "./globals.css";
 const sans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const mono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
 
-const nav = ["/", "/about", "/projects", "/blog", "/resources", "/lab", "/contact"];
+const nav = ["/", "/case-studies", "/about", "/projects", "/blog", "/resources", "/lab", "/contact"];
 
-const label = (href: string) => (href === "/" ? "Home" : href.replace("/", "").replace(/^./, (s) => s.toUpperCase()));
+const labelMap: Record<string, string> = {
+  "/": "Home",
+  "/case-studies": "Case Studies",
+};
+
+const label = (href: string) => labelMap[href] ?? href.replace("/", "").replace(/^./, (s) => s.toUpperCase());
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://mell0wx.com"),
+  metadataBase: new URL("https://mell0wx.tech"),
   title: {
-    default: "mell0wx — Cybersecurity Engineer & Creative Technologist",
+    default: "mell0wx — Security-Focused Systems Builder",
     template: "%s | mell0wx",
   },
   description:
-    "Modern digital command center for cybersecurity, infrastructure engineering, automation, music, and consulting.",
+    "Security engineering portfolio focused on methodology, lab-driven validation, self-hosted infrastructure, and practical technical outcomes.",
   openGraph: {
-    title: "mell0wx — Cybersecurity Engineer • Infrastructure Architect • Creative Technologist",
-    description: "Building secure systems, intelligent workflows, and modern technical experiences.",
+    title: "mell0wx — Security-Focused Systems Builder",
+    description:
+      "Case studies in security methodology, purple-team lab engineering, vulnerability research workflows, and self-hosted infrastructure.",
     type: "website",
-    url: "https://mell0wx.com",
+    url: "https://mell0wx.tech",
   },
   twitter: {
     card: "summary_large_image",
-    title: "mell0wx — Modern Digital Command Center",
-    description: "Cybersecurity, infrastructure, automation, and creative technology.",
+    title: "mell0wx — Security-Focused Systems Builder",
+    description: "Security methodology, lab systems, and infrastructure case studies.",
   },
 };
 

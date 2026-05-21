@@ -58,11 +58,12 @@ body {
 .card { padding: 18px; }
 
 .hero { padding: 28px; }
+.premium-hero { border-color: #2a3a57; }
 .kicker { color: #bfd0eb; text-transform: uppercase; letter-spacing: .18em; font-size: .75rem; }
 .hero-title {
   margin: 12px 0;
-  font-size: clamp(2rem, 5vw, 4rem);
-  line-height: 1.05;
+  font-size: clamp(2rem, 4.4vw, 3.5rem);
+  line-height: 1.08;
   text-wrap: balance;
 }
 .sub { color: var(--muted); max-width: 760px; }
@@ -108,6 +109,24 @@ body {
   background: linear-gradient(145deg, rgba(139,92,246,.12), rgba(37,99,235,.06) 45%, transparent 75%);
   pointer-events: none;
 }
+
+.case-card { padding: 0; overflow: hidden; }
+.case-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 1px solid var(--line);
+  filter: saturate(.9) contrast(1.04);
+}
+.case-body { padding: 16px; }
+.case-body h3 { margin: 0 0 10px; font-size: 1.05rem; line-height: 1.35; }
+.case-body h3 a { color: #edf4ff; text-decoration: none; }
+.case-body h3 a:hover { text-decoration: underline; }
+.case-body p { color: var(--muted); font-size: .92rem; line-height: 1.55; }
+.case-body p strong { color: #dbe8ff; }
+
+.list-tight { margin: 0; padding-left: 1.1rem; }
+.list-tight li { margin-bottom: .5rem; }
 
 .timeline { border-left: 1px solid #2a3a57; margin-left: 6px; padding-left: 16px; }
 .timeline-item { margin-bottom: 14px; }
