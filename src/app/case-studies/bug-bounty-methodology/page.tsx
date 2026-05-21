@@ -6,8 +6,9 @@ export default function BugBountyMethodologyCaseStudyPage() {
       <p className="kicker">Case Study · In Progress</p>
       <h1 className="hero-title">Hermes Bug Bounty Methodology Workflow</h1>
       <p className="sub">
-        A methodology-first vulnerability research workflow focused on improving signal quality through structure,
-        testing discipline, and reproducible notes.
+        This workflow shows how I approach vulnerability research as an engineering process, not random probing.
+        It is designed to improve finding quality, preserve reasoning, and produce cleaner handoff into report-ready
+        evidence for product security and triage teams.
       </p>
 
       <section className="section grid grid-2">
@@ -15,14 +16,16 @@ export default function BugBountyMethodologyCaseStudyPage() {
           <h2>1) Problem / Goal</h2>
           <p className="sub">
             Ad-hoc bounty testing creates inconsistent results and weak reporting context. I wanted a workflow that
-            improves vulnerability discovery quality by structuring scope analysis, hypothesis generation, and follow-through.
+            enforces scope discipline, makes each test decision explicit, and reduces context loss between discovery,
+            validation, and final write-up.
           </p>
         </article>
         <article className="glass card">
           <h2>2) What I Built</h2>
           <p className="sub">
             A Hermes-driven process model for scope intake, attack-surface segmentation, test path planning, evidence
-            capture, and reporting continuity.
+            capture, and reporting continuity. The workflow turns exploratory testing into a documented pipeline that
+            can be reviewed, repeated, and improved over time.
           </p>
         </article>
       </section>

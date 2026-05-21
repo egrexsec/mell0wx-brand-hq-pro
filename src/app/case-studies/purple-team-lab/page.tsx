@@ -6,8 +6,9 @@ export default function PurpleTeamLabCaseStudyPage() {
       <p className="kicker">Case Study · In Progress</p>
       <h1 className="hero-title">Purple Team Lab with Splunk and Investigation Automation</h1>
       <p className="sub">
-        A local, repeatable testing environment for simulating attacker behavior, validating detection logic, and
-        improving investigation workflow quality.
+        I built this lab to prove I can turn attack simulation into repeatable detection and investigation outcomes.
+        It reflects the core skills teams expect from a security engineer: controlled testing, signal validation, and
+        disciplined technical documentation.
       </p>
 
       <section className="section grid grid-2">
@@ -15,15 +16,16 @@ export default function PurpleTeamLabCaseStudyPage() {
           <h2>1) Problem / Goal</h2>
           <p className="sub">
             I needed a safe environment to run realistic attack scenarios and test detection assumptions without
-            production risk. The objective was to make detection validation and post-attack investigation repeatable,
-            not one-off.
+            production risk. The goal was to replace one-off analysis with a repeatable workflow that can be tuned,
+            replayed, and defended in front of stakeholders.
           </p>
         </article>
         <article className="glass card">
           <h2>2) What I Built</h2>
           <p className="sub">
             A VirtualBox-based Windows 11 lab with attacker, victim, and defender systems, plus Splunk for telemetry
-            collection and analysis. The environment is designed for structured scenario replay and tuning.
+            collection and analysis. The stack is intentionally built for structured replay, faster detection iteration,
+            and cleaner incident investigation handoff.
           </p>
         </article>
       </section>

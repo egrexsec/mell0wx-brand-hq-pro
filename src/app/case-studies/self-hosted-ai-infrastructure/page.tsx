@@ -6,8 +6,9 @@ export default function SelfHostedAiInfrastructureCaseStudyPage() {
       <p className="kicker">Case Study · Active</p>
       <h1 className="hero-title">Self-Hosted AI + Infrastructure Stack</h1>
       <p className="sub">
-        A Docker-based homelab platform designed to support documentation, automation, and AI-assisted technical
-        operations with security-minded architecture decisions.
+        This project demonstrates hands-on infrastructure ownership for security-adjacent engineering work.
+        I built it to support reliable operations, clear technical documentation, and AI-assisted execution without
+        sacrificing maintainability or security posture.
       </p>
 
       <section className="section grid grid-2">
@@ -15,14 +16,16 @@ export default function SelfHostedAiInfrastructureCaseStudyPage() {
           <h2>1) Problem / Goal</h2>
           <p className="sub">
             I needed an environment where documentation, system operations, and AI-assisted workflows could run in one
-            controlled stack without sacrificing maintainability or security posture.
+            controlled stack. The objective was to reduce operational friction while preserving traceability,
+            security-minded defaults, and recovery clarity.
           </p>
         </article>
         <article className="glass card">
           <h2>2) What I Built</h2>
           <p className="sub">
             A self-hosted Docker architecture with organized service boundaries, centralized operational documentation,
-            and workflow components for AI-assisted execution and automation.
+            and workflow components for AI-assisted execution and automation. The stack is treated as an evolving
+            platform with explicit design decisions, not a one-time setup.
           </p>
         </article>
       </section>
