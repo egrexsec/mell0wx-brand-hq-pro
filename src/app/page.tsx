@@ -65,29 +65,15 @@ export default function HomePage() {
       <section className="section grid grid-3">
         <article className="glass card">
           <div className="metric">Target Roles</div>
-          <p className="metric-label">
-            Threat Hunter · Detection Engineer · DFIR Analyst · Incident Responder · Security Operations Analyst
-          </p>
-          <p className="sub">
-            Positioned for teams that need disciplined investigation, practical detection logic, and clear evidence-backed
-            incident workflows.
-          </p>
+          <div className="metric-label">Threat Hunter · Detection Engineer · DFIR Analyst · Incident Responder · Security Operations Analyst</div>
         </article>
         <article className="glass card">
-          <div className="metric">Core Tooling + Environment</div>
-          <p className="metric-label">Splunk · VirtualBox Labs · Docker · Tailscale · Linux · Hermes Agent</p>
-          <p className="sub">
-            Built around your real stack: purple-team simulation, self-hosted infrastructure, and AI-assisted execution for
-            repeatable security operations.
-          </p>
+          <div className="metric">Core Focus</div>
+          <div className="metric-label">Security Methodology · Lab Engineering · Vulnerability Research</div>
         </article>
         <article className="glass card">
-          <div className="metric">How You Operate</div>
-          <p className="metric-label">Methodical · Detection-minded · Architecture-first · Documentation-driven</p>
-          <p className="sub">
-            You translate complex systems into testable workflows, then iterate with logs, tradeoff notes, and operational
-            guardrails teams can trust.
-          </p>
+          <div className="metric">Operating Style</div>
+          <div className="metric-label">Methodical · Architecture-first · Documentation-driven</div>
         </article>
       </section>
 
