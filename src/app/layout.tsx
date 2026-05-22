@@ -50,7 +50,22 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
             ))}
           </nav>
         </header>
+
+        <div className="task-strip" aria-label="quick actions">
+          <Link href="/case-studies" className="task-pill">Flagship Case Studies</Link>
+          <Link href="/projects" className="task-pill">Lab Projects</Link>
+          <Link href="/contact" className="task-pill task-pill-primary">Contact</Link>
+        </div>
+
         <main className="container-main">{children}</main>
+
+        <nav className="mobile-taskbar" aria-label="mobile quick navigation">
+          <Link href="/">Home</Link>
+          <Link href="/case-studies">Cases</Link>
+          <Link href="/projects">Projects</Link>
+          <Link href="/contact">Contact</Link>
+        </nav>
+
         <footer className="site-footer">© {new Date().getFullYear()} mell0wx · Cybersecurity · Infrastructure · Creative Technology</footer>
       </body>
     </html>
