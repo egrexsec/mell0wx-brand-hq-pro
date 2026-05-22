@@ -47,10 +47,9 @@ export default function HomePage() {
     <>
       <section className="glass hero premium-hero hero-retro">
         <p className="kicker">mell0wx</p>
-        <h1 className="hero-title">
-          <span className="typewriter" aria-label="Cybersecurity Engineer, Infrastructure Architect, Creative Technologist">
-            Cybersecurity Engineer • Infrastructure Architect • Creative Technologist
-          </span>
+        <h1 className="hero-title" aria-label="Cybersecurity Engineer, Infrastructure Architect, Creative Technologist">
+          <span className="typewriter-main">Cybersecurity Engineer</span>
+          <span className="hero-title-rest"> • Infrastructure Architect • Creative Technologist</span>
         </h1>
         <p className="sub">Building secure systems, intelligent workflows, and modern technical experiences.</p>
         <div className="btn-row hero-cta-grid">
