@@ -103,6 +103,12 @@ body {
   to { opacity: 1; transform: scale(1) translateY(0); }
 }
 
+@keyframes scrollDot {
+  0% { transform: translateY(0); opacity: .25; }
+  35% { opacity: 1; }
+  100% { transform: translateY(10px); opacity: .08; }
+}
+
 .glass {
   animation: fadeUp .48s cubic-bezier(.22,.61,.36,1) both;
 }
@@ -182,6 +188,39 @@ body {
   border: none;
   color: #f1f7ff;
   background: linear-gradient(120deg, #2563eb, #3b82f6);
+}
+
+.scroll-cue {
+  margin-top: 18px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #c4d6f4;
+  text-decoration: none;
+  opacity: .92;
+}
+.scroll-cue:hover { color: #e8f2ff; }
+.scroll-cue-mouse {
+  width: 22px;
+  height: 34px;
+  border: 1.5px solid #6f87b7;
+  border-radius: 14px;
+  display: inline-flex;
+  justify-content: center;
+  padding-top: 6px;
+  background: rgba(9, 14, 24, .58);
+}
+.scroll-cue-dot {
+  width: 4px;
+  height: 7px;
+  border-radius: 999px;
+  background: #b9cdf2;
+  animation: scrollDot 1.5s cubic-bezier(.22,.61,.36,1) infinite;
+}
+.scroll-cue-label {
+  font-size: .8rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
 }
 
 .btn-row { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 18px; }
@@ -294,6 +333,8 @@ body {
   .hero-retro .hero-title { font-size: clamp(2rem, 11vw, 3.3rem); }
   .hero-main-cta { width: 100%; }
   .hero-outline-cta, .hero-blue-cta { flex: 1; justify-content: center; }
+  .scroll-cue { margin-top: 14px; }
+  .scroll-cue-label { letter-spacing: .1em; }
   .section { margin-top: 20px; }
   .card { padding: 14px; border-radius: 14px; }
   .btn-row { gap: 8px; margin-top: 14px; }

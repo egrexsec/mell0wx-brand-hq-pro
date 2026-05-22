@@ -60,6 +60,13 @@ export default function HomePage() {
             Contact
           </Link>
         </div>
+
+        <a href="#flagship-case-studies" className="scroll-cue" aria-label="Scroll to flagship case studies">
+          <span className="scroll-cue-mouse" aria-hidden="true">
+            <span className="scroll-cue-dot" />
+          </span>
+          <span className="scroll-cue-label">Scroll</span>
+        </a>
       </section>
 
       <section className="section grid grid-3">
@@ -77,7 +84,7 @@ export default function HomePage() {
         </article>
       </section>
 
-      <section className="section">
+      <section className="section" id="flagship-case-studies">
         <h2>Flagship Case Studies</h2>
         <p className="sub">Three systems that represent how I build: hypothesis-driven, testable, and operationally grounded.</p>
 
