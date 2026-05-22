@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Geist, Geist_Mono } from "next/font/google";
+import ScrollReveal from "@/components/scroll-reveal";
 import "./globals.css";
 
 const sans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
@@ -41,6 +42,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en" className={`${sans.variable} ${mono.variable}`}>
       <body>
+        <ScrollReveal />
         <div className="bg-grid" />
         <header className="site-header">
           <Link href="/" className="brand">mell0wx</Link>

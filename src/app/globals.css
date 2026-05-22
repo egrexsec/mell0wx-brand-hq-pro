@@ -121,11 +121,21 @@ body {
 }
 
 .glass {
-  animation: fadeUp .48s cubic-bezier(.22,.61,.36,1) both;
   background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.025));
   border: 1px solid var(--line);
   border-radius: 18px;
   box-shadow: 0 18px 60px rgba(0,0,0,.38);
+}
+
+.reveal-base {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity .55s cubic-bezier(.22,.61,.36,1), transform .55s cubic-bezier(.22,.61,.36,1);
+}
+
+.reveal-base.in-view {
+  opacity: 1;
+  transform: translateY(0);
 }
 .card { padding: 18px; }
 
