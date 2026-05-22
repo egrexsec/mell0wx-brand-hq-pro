@@ -15,7 +15,6 @@ export default function BlogPage() {
             <h3>{post.title}</h3>
             <p>{post.summary}</p>
             <div style={{ marginTop: 12 }}>
-              <span className="badge">{post.status}</span>
               <Link href={post.href} className="btn" aria-label={`Read ${post.title}`}>
                 Read article
               </Link>
