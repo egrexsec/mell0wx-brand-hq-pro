@@ -17,7 +17,7 @@ export default function ContactPage() {
         <article className="glass card">
           <h3>GitHub</h3>
           <p>
-            <Link href="https://github.com/mell0wx" className="btn" target="_blank" rel="noreferrer">github.com/mell0wx</Link>
+            <Link href="https://github.com/egrexsec" className="btn" target="_blank" rel="noreferrer">github.com/egrexsec</Link>
           </p>
         </article>
         <article className="glass card">
