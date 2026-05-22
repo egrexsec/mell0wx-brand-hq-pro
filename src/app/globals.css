@@ -112,38 +112,6 @@ body {
   box-shadow: 0 0 0 1px rgba(139, 92, 246, .2) inset, 0 6px 18px rgba(74, 64, 219, .25);
 }
 
-.mobile-taskbar {
-  position: fixed;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 12px;
-  z-index: 65;
-  display: none;
-  width: min(94vw, 520px);
-  padding: 8px;
-  border: 1px solid #2b3b59;
-  border-radius: 16px;
-  background: rgba(10, 14, 24, .92);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 18px 38px rgba(0,0,0,.45), 0 0 0 1px rgba(139,92,246,.14) inset;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 8px;
-}
-.mobile-taskbar a {
-  text-align: center;
-  text-decoration: none;
-  color: #cbd9f2;
-  font-size: .8rem;
-  border: 1px solid #30425f;
-  border-radius: 10px;
-  padding: 9px 8px;
-  background: linear-gradient(135deg, rgba(23,31,50,.8), rgba(10,14,24,.8));
-}
-.mobile-taskbar a:hover {
-  color: #fff;
-  border-color: #7b6df5;
-}
-
 .site-footer { border-top: 1px solid var(--line); color: var(--muted); text-align: center; padding: 20px; }
 
 .glass {
@@ -302,8 +270,7 @@ body {
     font-size: .79rem;
     padding: 7px 10px;
   }
-  .mobile-taskbar { display: grid; }
-  .container-main { padding: 20px 14px 98px; }
+  .container-main { padding: 20px 14px 64px; }
   .hero { padding: 18px; }
   .hero-title { font-size: clamp(1.72rem, 8.2vw, 2.25rem); line-height: 1.14; }
   .hero-retro .hero-title { font-size: clamp(2rem, 11vw, 3.3rem); }

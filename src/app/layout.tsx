@@ -67,13 +67,6 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
 
         <main className="container-main">{children}</main>
 
-        <nav className="mobile-taskbar" aria-label="mobile quick navigation">
-          <Link href="/">Home</Link>
-          <Link href="/case-studies">Cases</Link>
-          <Link href="/projects">Projects</Link>
-          <Link href="/contact">Contact</Link>
-        </nav>
-
         <footer className="site-footer">© {new Date().getFullYear()} mell0wx · Cybersecurity · Infrastructure · Creative Technology</footer>
       </body>
     </html>
