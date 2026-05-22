@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const flagshipCaseStudies = [
@@ -47,14 +48,14 @@ export default function HomePage() {
     <>
       <section className="glass hero premium-hero hero-retro">
         <p className="kicker">mell0wx</p>
-        <h1 className="hero-title" aria-label="Cybersecurity Engineer, Infrastructure Architect, Creative Technologist">
-          <span className="typewriter-main">Cybersecurity Engineer</span>
-          <span className="hero-title-rest"> • Infrastructure Architect • Creative Technologist</span>
+        <h1 className="hero-title" aria-label="Threat Detection and DFIR Engineer, Infrastructure Automation">
+          <span className="typewriter-main">Threat Detection &amp; DFIR Engineer</span>
+          <span className="hero-title-rest"> • Infrastructure Automation • Security Operations</span>
         </h1>
-        <p className="sub">Building secure systems, intelligent workflows, and modern technical experiences.</p>
+        <p className="sub">Building detection-driven systems, investigation workflows, and resilient infrastructure operations.</p>
         <div className="btn-row hero-cta-grid">
-          <Link href="/projects" className="btn primary hero-main-cta">
-            View Projects →
+          <Link href="/blog/threat-informed-detection" className="btn primary hero-main-cta">
+            Read Detection Walkthrough →
           </Link>
           <Link href="/blog" className="btn hero-outline-cta">
             Read Blog
@@ -94,7 +95,14 @@ export default function HomePage() {
         <div className="grid grid-3" style={{ marginTop: 14 }}>
           {flagshipCaseStudies.map((study) => (
             <article key={study.title} className="glass card case-card">
-              <img src={study.image} alt={study.title} className="case-image" />
+              <Image
+                src={study.image}
+                alt={study.title}
+                className="case-image"
+                width={1400}
+                height={900}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              />
               <div className="case-body">
                 <p className="kicker" style={{ marginBottom: 8 }}>
                   {study.status}

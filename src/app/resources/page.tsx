@@ -47,31 +47,53 @@ const toolGroups: ToolGroup[] = [
     ],
   },
   {
-    title: "Cyber Analysis + Triage",
+    title: "Threat Triage Workflow",
     tools: [
       {
         name: "urlscan.io",
         context: "Quick URL detonation, infrastructure fingerprinting, and visual page behavior review.",
       },
       {
-        name: "Hybrid Analysis",
-        context: "Malware and suspicious file/URL dynamic analysis for threat triage and enrichment.",
-      },
-      {
-        name: "CyberChef",
-        context: "Fast decode/encode, IOC transformation, and payload deobfuscation during investigations.",
-      },
-      {
         name: "VirusTotal",
         context: "Multi-engine reputation checks and graph pivots for domains, hashes, and URLs.",
+      },
+      {
+        name: "Hybrid Analysis",
+        context: "Malware and suspicious file/URL dynamic analysis for threat triage and enrichment.",
       },
       {
         name: "ANY.RUN",
         context: "Interactive sandbox sessions to validate suspicious behavior and collect indicators.",
       },
       {
+        name: "AbuseIPDB",
+        context: "IP reputation pivoting to quickly prioritize noisy versus high-risk infrastructure.",
+      },
+    ],
+  },
+  {
+    title: "Email Investigation Workflow",
+    tools: [
+      {
         name: "MXToolbox",
         context: "Email security and deliverability analysis for SPF, DKIM, DMARC, and mail-header triage.",
+      },
+      {
+        name: "Google Admin Toolbox Messageheader",
+        context: "Header parsing to validate sender path, relay chain, and authentication alignment.",
+      },
+      {
+        name: "dmarcian",
+        context: "DMARC posture analysis and policy troubleshooting for domain email security.",
+      },
+    ],
+  },
+  {
+    title: "Deobfuscation + Data Transformation Workflow",
+    tools: [
+      {
+        name: "CyberChef",
+        context: "Fast decode/encode, IOC transformation, and payload deobfuscation during investigations.",
       },
     ],
   },
