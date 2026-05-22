@@ -337,6 +337,12 @@ body {
   .hero { padding: 18px; }
   .hero-title { font-size: clamp(1.72rem, 8.2vw, 2.25rem); line-height: 1.14; }
   .hero-retro .hero-title { font-size: clamp(2rem, 11vw, 3.3rem); }
+  .typewriter {
+    width: auto;
+    white-space: normal;
+    overflow: visible;
+    animation: cursorBlink .8s step-end infinite;
+  }
   .hero-main-cta { width: 100%; }
   .hero-outline-cta, .hero-blue-cta { flex: 1; justify-content: center; }
   .scroll-cue { margin-top: 14px; }
