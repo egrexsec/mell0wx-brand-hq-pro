@@ -49,6 +49,14 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
               <Link key={href} href={href}>{label(href)}</Link>
             ))}
           </nav>
+          <details className="mobile-menu">
+            <summary aria-label="Open navigation menu">☰</summary>
+            <div className="mobile-menu-panel">
+              {nav.map((href) => (
+                <Link key={`m-${href}`} href={href}>{label(href)}</Link>
+              ))}
+            </div>
+          </details>
         </header>
 
         <div className="task-strip" aria-label="quick actions">

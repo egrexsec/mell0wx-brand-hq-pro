@@ -45,22 +45,18 @@ const flagshipCaseStudies = [
 export default function HomePage() {
   return (
     <>
-      <section className="glass hero premium-hero">
-        <p className="kicker">Security Engineering Portfolio</p>
-        <h1 className="hero-title">Security-focused systems builder for product, detection, and research teams.</h1>
-        <p className="sub">
-          I design and document repeatable security workflows across lab environments, vulnerability research, and
-          self-hosted infrastructure—turning technical complexity into practical detections, investigations, and
-          defensible outcomes.
-        </p>
-        <div className="btn-row">
-          <Link href="/case-studies" className="btn primary">
-            Read Case Studies
+      <section className="glass hero premium-hero hero-retro">
+        <p className="kicker">mell0wx</p>
+        <h1 className="hero-title">Cybersecurity Engineer • Infrastructure Architect • Creative Technologist</h1>
+        <p className="sub">Building secure systems, intelligent workflows, and modern technical experiences.</p>
+        <div className="btn-row hero-cta-grid">
+          <Link href="/projects" className="btn primary hero-main-cta">
+            View Projects →
           </Link>
-          <Link href="/about" className="btn">
-            View Positioning
+          <Link href="/blog" className="btn hero-outline-cta">
+            Read Blog
           </Link>
-          <Link href="/contact" className="btn">
+          <Link href="/contact" className="btn hero-blue-cta">
             Contact
           </Link>
         </div>
