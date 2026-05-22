@@ -47,6 +47,35 @@ const toolGroups: ToolGroup[] = [
     ],
   },
   {
+    title: "Cyber Analysis + Triage",
+    tools: [
+      {
+        name: "urlscan.io",
+        context: "Quick URL detonation, infrastructure fingerprinting, and visual page behavior review.",
+      },
+      {
+        name: "Hybrid Analysis",
+        context: "Malware and suspicious file/URL dynamic analysis for threat triage and enrichment.",
+      },
+      {
+        name: "CyberChef",
+        context: "Fast decode/encode, IOC transformation, and payload deobfuscation during investigations.",
+      },
+      {
+        name: "VirusTotal",
+        context: "Multi-engine reputation checks and graph pivots for domains, hashes, and URLs.",
+      },
+      {
+        name: "ANY.RUN",
+        context: "Interactive sandbox sessions to validate suspicious behavior and collect indicators.",
+      },
+      {
+        name: "MXToolbox",
+        context: "Email security and deliverability analysis for SPF, DKIM, DMARC, and mail-header triage.",
+      },
+    ],
+  },
+  {
     title: "AI-Assisted Workflows",
     tools: [
       {
