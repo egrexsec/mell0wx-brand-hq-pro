@@ -65,7 +65,7 @@ export default function HomePage() {
       <section className="section grid grid-3">
         <article className="glass card">
           <div className="metric">Target Roles</div>
-          <div className="metric-label">Security Engineer · Product Security · Detection Engineer · Security Research</div>
+          <div className="metric-label">Threat Hunter · Detection Engineer · DFIR Analyst · Incident Responder · Security Operations Analyst</div>
         </article>
         <article className="glass card">
           <div className="metric">Core Focus</div>
