@@ -7,7 +7,7 @@ import "./globals.css";
 const sans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const mono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
 
-const nav = ["/", "/case-studies", "/about", "/projects", "/blog", "/resources", "/lab", "/contact"];
+const nav = ["/", "/case-studies", "/about", "/projects", "/blog", "/resources", "/contact"];
 
 const labelMap: Record<string, string> = {
   "/": "Home",
