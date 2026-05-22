@@ -89,29 +89,6 @@ body {
 }
 .mobile-menu-panel a:hover { border-color: #7b6df5; color: #fff; }
 
-.task-strip {
-  max-width: 1160px;
-  margin: 12px auto 0;
-  padding: 0 18px;
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-.task-pill {
-  border: 1px solid #2f3f5f;
-  background: linear-gradient(120deg, rgba(18, 24, 40, .85), rgba(11, 14, 25, .92));
-  color: #cfe0ff;
-  border-radius: 999px;
-  text-decoration: none;
-  font-size: .84rem;
-  padding: 8px 12px;
-}
-.task-pill:hover { border-color: #5e7cc4; color: #fff; }
-.task-pill-primary {
-  border-color: #5f56d9;
-  box-shadow: 0 0 0 1px rgba(139, 92, 246, .2) inset, 0 6px 18px rgba(74, 64, 219, .25);
-}
-
 .site-footer { border-top: 1px solid var(--line); color: var(--muted); text-align: center; padding: 20px; }
 
 .glass {
@@ -261,15 +238,6 @@ body {
 @media (max-width: 760px) {
   .nav { display: none; }
   .mobile-menu { display: block; }
-  .task-strip {
-    padding: 0 14px;
-    margin-top: 10px;
-    gap: 8px;
-  }
-  .task-pill {
-    font-size: .79rem;
-    padding: 7px 10px;
-  }
   .container-main { padding: 20px 14px 64px; }
   .hero { padding: 18px; }
   .hero-title { font-size: clamp(1.72rem, 8.2vw, 2.25rem); line-height: 1.14; }
