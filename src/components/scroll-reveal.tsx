@@ -1,8 +1,11 @@
 "use client";
 
 import { useEffect } from "react";
+import { usePathname } from "next/navigation";
 
 export default function ScrollReveal() {
+  const pathname = usePathname();
+
   useEffect(() => {
     const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     if (reduceMotion) return;
@@ -15,7 +18,13 @@ export default function ScrollReveal() {
 
     if (!targets.length) return;
 
-    targets.forEach((el) => el.classList.add("reveal-base"));
+    const isCalmerPage = pathname.startsWith("/blog") || pathname.startsWith("/case-studies");
+    const stepDelay = isCalmerPage ? 42 : 28;
+
+    targets.forEach((el, index) => {
+      el.classList.add("reveal-base");
+      el.style.setProperty("--reveal-delay", `${index * stepDelay}ms`);
+    });
 
     const observer = new IntersectionObserver(
       (entries) => {
@@ -32,7 +41,7 @@ export default function ScrollReveal() {
     targets.forEach((el) => observer.observe(el));
 
     return () => observer.disconnect();
-  }, []);
+  }, [pathname]);
 
   return null;
 }
