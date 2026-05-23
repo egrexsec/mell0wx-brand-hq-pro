@@ -59,6 +59,12 @@ export const blogTopics = [
 
 export const blogPosts = [
   {
+    title: "From GitOps-lite to Ansible Without Breaking Prod",
+    summary: "How I moved from script-heavy ops to validated automation without trading away uptime or recoverability.",
+    href: "/blog/gitops-lite-to-ansible-without-breaking-prod",
+    status: "Published",
+  },
+  {
     title: "When a Routine Update Put My Homelab to Sleep",
     summary: "A real incident on update-driven suspend behavior, and how to balance patching with uptime guardrails.",
     href: "/blog/when-a-routine-update-put-my-homelab-to-sleep",
