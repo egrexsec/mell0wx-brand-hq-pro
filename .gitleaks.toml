@@ -1,0 +1,16 @@
+title = "mell0wx-brand-hq-pro gitleaks config"
+
+[allowlist]
+description = "Global allowlist for known non-sensitive patterns and generated artifacts"
+paths = [
+  '''^\.next/''',
+  '''^node_modules/''',
+  '''^\.git/''',
+  '''^coverage/''',
+  '''^dist/'''
+]
+regexes = [
+  '''(?i)example(_|-)?key''',
+  '''(?i)test(_|-)?token''',
+  '''(?i)dummy(_|-)?secret'''
+]
