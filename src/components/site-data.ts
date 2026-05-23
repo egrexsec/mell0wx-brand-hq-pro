@@ -59,6 +59,12 @@ export const blogTopics = [
 
 export const blogPosts = [
   {
+    title: "When a Routine Update Put My Homelab to Sleep",
+    summary: "A real incident on update-driven suspend behavior, and how to balance patching with uptime guardrails.",
+    href: "/blog/when-a-routine-update-put-my-homelab-to-sleep",
+    status: "Published",
+  },
+  {
     title: "Threat-Informed Detection in Real Environments",
     summary: "How to model detections around attacker behavior and incident response decisions.",
     href: "/blog/threat-informed-detection",
